@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- As a link -->
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/sh2.jpg" alt="Superhero Logo" width="30" height="24">
+                SuperHero
+            </a>
+        </div>
+    </nav>
+    <header>
+        <div class="container text-center mt-4">
+            <img src="./assets/img/sh1.jpg">
+            <h1>Encuentra tu SuperHero</h1>
+        </div>
+    </header>
+    <section class="search__section text-center">
+        <div class="search__container">
+            <form>
+                <div class="mb-3">
+                    <label for="superhero" class="form-label">Ingresa aqui el numero de tu SuperHero</label>
+                    <input type="text" class="form-control" id="superhero" placeholder="123">
+                </div>
+                <button type="submit" id="search-superhero" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="superhero__container text-center" id="superhero__res"></div>
+
+    <div class="mt-4" id="chartContainer"></div>
+
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/@canvasjs/charts/canvasjs.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
